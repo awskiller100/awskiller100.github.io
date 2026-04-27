@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>awskiller10 — GFX Artist</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <canvas id="snow"></canvas>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-panel" id="modalPanel">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-img-wrap" id="mImgWrap">
+        <img id="mImg" src="" alt="" class="modal-img"/>
+        <div class="modal-img-fallback" id="mImgFallback"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <span class="modal-num" id="mNum"></span>
+          <span class="modal-cat" id="mCat"></span>
+        </div>
+        <h2 class="modal-title" id="mTitle"></h2>
+        <p class="modal-desc" id="mDesc"></p>
+        <div class="modal-details" id="mDetails"></div>
+        <div class="modal-tags" id="mTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <div class="nav-wrap">
+      <div class="logo">aws<span>killer</span>10</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-btn" onclick="window.open('https://discord.com/users/995979707495485470','_blank')">Hire Me</button>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mob-menu" id="mobMenu">
+    <a href="#hero"      class="mlink">Home</a>
+    <a href="#about"     class="mlink">About</a>
+    <a href="#stats"     class="mlink">Stats</a>
+    <a href="#portfolio" class="mlink">Work</a>
+    <a href="#pricing"   class="mlink">Pricing</a>
+    <a href="#contact"   class="mlink">Contact</a>
+  </div>
+
+  <section id="hero">
+    <div class="grid-overlay"></div>
+    <div class="hero-center">
+      <div class="hero-text">
+        <div class="badge ru" style="--d:.1s">
+          <span class="bpulse"></span>Available for commissions
+        </div>
+        <h1 class="hero-name ru" style="--d:.2s">aws<span>killer</span>10</h1>
+        <div class="hero-role ru" style="--d:.3s"><span class="rline"></span>GFX Artist<span class="rline"></span></div>
+        <p class="hero-sub ru" style="--d:.4s">Crafting premium visuals that command attention.<br/>Digital art &bull; Graphic design &bull; Brand identity</p>
+        <div class="hero-btns ru" style="--d:.5s">
+          <button class="btn-main" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View My Work &rarr;</button>
+          <button class="btn-out" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><div class="sline"></div><span>scroll</span></div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="slabel ru">/ About</div>
+    <h2 class="stitle ru">The Artist Behind<br/><em>The Pixels</em></h2>
+    <div class="about-cards">
+      <div class="gc about-c ru">
+        <div class="ico-wrap"><i class="fa-solid fa-paintbrush"></i></div>
+        <h3>Creative Vision</h3>
+        <p>Blending precision with intuition to create visuals that don't just look good — they tell a story. Every pixel is intentional.</p>
+      </div>
+      <div class="gc about-c ru" style="--d:.1s">
+        <div class="ico-wrap"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Fast Delivery</h3>
+        <p>Three years of experience means streamlined workflows and reliable turnarounds. Quality without the wait.</p>
+      </div>
+      <div class="gc about-c ru" style="--d:.2s">
+        <div class="ico-wrap"><i class="fa-solid fa-trophy"></i></div>
+        <h3>Proven Results</h3>
+        <p>52 completed projects. A track record built on client satisfaction and designs that drive real impact.</p>
+      </div>
+    </div>
+    <div class="gc bio-card ru" style="--d:.3s">
+      <div class="bio-txt">
+        <h3>Hey, I'm <span class="hl">awskiller10</span></h3>
+        <p>A professional GFX Artist crafting premium digital experiences in the Roblox ecosystem and beyond. 3 years of focused creative work, 52 shipped projects.</p>
+        <p>Brand identities, thumbnail art, UI elements, full graphic packages — I deliver work that stands apart.</p>
+        <div class="tags">
+        <span>Roblox GFX</span>
+        <span>Thumbnails</span>
+        <span>Banners</span>
+        <span>Profile Graphics</span>
+        <span>Character Renders</span>
+        <span>Lighting & Effects</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-pic ru" style="--d:.2s">
+      <div class="p-ring pr1"></div>
+      <div class="p-ring pr2"></div>
+      <div class="p-frame">
+        <img src="images/ProfilePic.png" alt="awskiller10" class="p-img"
+             onerror="this.style.display='none';document.querySelector('.p-fb').style.display='flex'"/>
+        <div class="p-fb">AK</div>
+      </div>
+      <div class="p-tag"><i class="fa-solid fa-star"></i> GFX Artist</div>
+    </div>
+  </section>
+
+  <section id="stats" class="container">
+    <div class="slabel ru">/ Numbers</div>
+    <h2 class="stitle ru">By The <em>Numbers</em></h2>
+    <div class="stats-grid">
+      <div class="gc sc ru">
+        <div class="sc-ico"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="sc-num"><span class="cnt" data-t="52">0</span></div>
+        <div class="sc-lbl">Projects Completed</div>
+        <div class="sbar"><div class="sfill" style="--w:92%"></div></div>
+      </div>
+      <div class="gc sc ru" style="--d:.1s">
+        <div class="sc-ico"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="sc-num"><span class="cnt" data-t="3">0</span></div>
+        <div class="sc-lbl">Years Experience</div>
+        <div class="sbar"><div class="sfill" style="--w:60%"></div></div>
+      </div>
+      <div class="gc sc ru" style="--d:.2s">
+        <div class="sc-ico"><i class="fa-solid fa-gem"></i></div>
+        <div class="sc-num tx">3K&ndash;4K <small>R$</small></div>
+        <div class="sc-lbl">Price Range</div>
+        <div class="sbar"><div class="sfill" style="--w:80%"></div></div>
+      </div>
+      <div class="gc sc ru" style="--d:.3s">
+        <div class="sc-ico"><i class="fa-solid fa-star"></i></div>
+        <div class="sc-num"><span class="cnt" data-t="99.9">0</span><small>%</small></div>
+        <div class="sc-lbl">Client Satisfaction</div>
+        <div class="sbar"><div class="sfill" style="--w:100%"></div></div>
+      </div>
+    </div>
+  </section>
+
+<section id="portfolio" class="container">
+    <div class="slabel ru">/ Portfolio</div>
+    <h2 class="stitle ru">Selected <em>Works</em></h2>
+    <p class="ssub ru">Click any project to view full details.</p>
+    <div class="port-grid">
+      <div class="gc pc ru" data-project="0">
+        <div class="pt t1"><img src="images/first gfx.jpg" alt="" class="pt-img"/><span class="pn">01</span><span class="ptype">Brand Identity</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Branding</span><h3>Neon Blade Studios</h3><p>Full brand identity for a competitive gaming studio.</p></div>
+      </div>
+      <div class="gc pc ru" style="--d:.05s" data-project="1">
+        <div class="pt t2"><img src="images/second gfx.jpg" alt="" class="pt-img"/><span class="pn">02</span><span class="ptype">Thumbnail Art</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Digital Art</span><h3>Arctic Warfare Series</h3><p>Cinematic thumbnails for a top Roblox military roleplay.</p></div>
+      </div>
+      <div class="gc pc ru" style="--d:.1s" data-project="2">
+        <div class="pt t3"><img src="images/third gfx.jpg" alt="" class="pt-img"/><span class="pn">03</span><span class="ptype">UI Design</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; UI Kit</span><h3>Frost UI Framework</h3><p>Glass-style UI component library for a premium Roblox RPG.</p></div>
+      </div>
+      <div class="gc pc ru" style="--d:.15s" data-project="3">
+        <div class="pt t4"><img src="images/forth gfxc.jpg" alt="" class="pt-img"/><span class="pn">04</span><span class="ptype">Digital Art</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Illustration</span><h3>Phantom Protocol</h3><p>Character renders and promotional art for a stealth-action title.</p></div>
+      </div>
+      <div class="gc pc ru" style="--d:.2s" data-project="4">
+        <div class="pt t5"><img src="images/fifth gfx.jpg" alt="" class="pt-img"/><span class="pn">05</span><span class="ptype">Banner Design</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Branding</span><h3>StarForge Community</h3><p>Discord branding suite — banners, icons, role badges.</p></div>
+      </div>
+      <div class="gc pc ru" style="--d:.25s" data-project="5">
+        <div class="pt t6"><img src="images/sixth gfx.jpg" alt="" class="pt-img"/><span class="pn">06</span><span class="ptype">Logo Design</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Identity</span><h3>CrimsonEdge Esports</h3><p>Dynamic logo and branding for a rising competitive Roblox team.</p></div>
+      </div>
+
+      <div class="gc pc ru extra-card" style="--d:.05s;display:none" data-project="6">
+        <div class="pt t1"><img src="images/seventh gfx.jpg" alt="" class="pt-img"/><span class="pn">07</span><span class="ptype">Digital Art</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Digital Art</span><h3>Project Seven</h3><p>A nice GFX I made.</p></div>
+        </div>
+        <div class="gc pc ru extra-card" style="--d:.1s;display:none" data-project="7">
+        <div class="pt t2"><img src="images/eighth gfx.jpg" alt="" class="pt-img"/><span class="pn">08</span><span class="ptype">Branding</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Branding</span><h3>Project Eight</h3><p>A nice GFX I made.</p></div>
+        </div>
+        <!--
+        <div class="gc pc ru extra-card" style="--d:.15s;display:none" data-project="8">
+        <div class="pt t3"><img src="images/ninth gfx.jpg" alt="soon" class="pt-img"/><span class="pn">09</span><span class="ptype">Logo Design</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Identity</span><h3>Project Nine</h3><p>A nice GFX I made.</p></div>
+        </div>
+        <div class="gc pc ru extra-card" style="--d:.2s;display:none" data-project="9">
+        <div class="pt t4"><img src="images/tenth gfx.jpg" alt="" class="pt-img"/><span class="pn">10</span><span class="ptype">UI Design</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; UI Kit</span><h3>Project Ten</h3><p>A nice GFX I made.</p></div>
+        </div>
+        <div class="gc pc ru extra-card" style="--d:.25s;display:none" data-project="10">
+        <div class="pt t5"><img src="images/eleventh gfx.jpg" alt="" class="pt-img"/><span class="pn">11</span><span class="ptype">Thumbnail Art</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Digital Art</span><h3>Project Eleven</h3><p>A nice GFX I made.</p></div>
+        </div>
+        <div class="gc pc ru extra-card" style="--d:.3s;display:none" data-project="11">
+        <div class="pt t6"><img src="images/twelfth gfx.jpg" alt="" class="pt-img"/><span class="pn">12</span><span class="ptype">Banner Design</span><div class="pov"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Details</div></div>
+        <div class="pi"><span class="pcat">GFX &bull; Branding</span><h3>Project Twelve</h3><p>A nice GFX I made.</p></div>
+        </div>
+        -->
+        </div>
+    </div>
+        <div class="port-cta ru" style="--d:.3s">
+        <p>Interested in working together?</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <button class="btn-out" id="viewMoreBtn" onclick="toggleMore()">View More &darr;</button>
+            <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start a Project &rarr;</button>
+        </div>
+        </div>
+  </section>
+
+  <section id="pricing" class="container">
+    <div class="slabel ru">/ Pricing</div>
+    <h2 class="stitle ru">Investment in <em>Quality</em></h2>
+    <p class="ssub ru">All prices in Robux (R$). Every package includes revisions and source files.</p>
+    <div class="price-grid">
+      <div class="gc prc ru">
+        <div class="prtier">Starter</div>
+        <div class="pramt"><span class="prcur">R$</span>3,000</div>
+        <div class="prdesc">Perfect for single-piece commissions and quick turnarounds.</div>
+        <ul class="prlist">
+          <li><i class="fa-solid fa-check"></i> Single graphic asset</li>
+          <li><i class="fa-solid fa-check"></i> 1 revision round</li>
+          <li><i class="fa-solid fa-check"></i> PNG + source file</li>
+          <li><i class="fa-solid fa-check"></i> 3&ndash;5 day delivery</li>
+        </ul>
+        <button class="btn-pr" onclick="window.open('https://discord.com/users/995979707495485470','_blank')">Get Started</button>
+      </div>
+      <div class="gc prc prc-feat ru" style="--d:.1s">
+        <div class="feat-tag">Most Popular</div>
+        <div class="prtier">Premium</div>
+        <div class="pramt"><span class="prcur">R$</span>3,500</div>
+        <div class="prdesc">The sweet spot — multi-asset packages with full creative support.</div>
+        <ul class="prlist">
+          <li><i class="fa-solid fa-check"></i> Up to 3 graphic assets</li>
+          <li><i class="fa-solid fa-check"></i> 2 revision rounds</li>
+          <li><i class="fa-solid fa-check"></i> All source files</li>
+          <li><i class="fa-solid fa-check"></i> Priority support</li>
+          <li><i class="fa-solid fa-check"></i> 4&ndash;6 day delivery</li>
+        </ul>
+        <button class="btn-pr btn-pr-f" onclick="window.open('https://discord.com/users/995979707495485470','_blank')">Get Started</button>
+      </div>
+      <div class="gc prc ru" style="--d:.2s">
+        <div class="prtier">Elite</div>
+        <div class="pramt"><span class="prcur">R$</span>4,000</div>
+        <div class="prdesc">Full-scale creative packages for serious brands and studios.</div>
+        <ul class="prlist">
+          <li><i class="fa-solid fa-check"></i> Full creative package</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited revisions</li>
+          <li><i class="fa-solid fa-check"></i> All formats + sources</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated support</li>
+          <li><i class="fa-solid fa-check"></i> Fastest turnaround</li>
+        </ul>
+        <button class="btn-pr" onclick="window.open('https://discord.com/users/995979707495485470','_blank')">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <div class="slabel ru">/ Contact</div>
+    <h2 class="stitle ru">Let's Create <em>Something</em></h2>
+    <p class="ssub ru">Reach out directly on Discord — fastest way to get started.</p>
+    <div class="contact-grid">
+      <div class="gc cc ru">
+        <div class="cico"><i class="fa-brands fa-discord"></i></div>
+        <h3>Discord</h3>
+        <p>Drop me a message and I'll respond within 24 hours.</p>
+        <div class="chandle">@awskiller10</div>
+      </div>
+      <div class="gc cc ru" style="--d:.1s">
+        <div class="cico"><i class="fa-solid fa-clock"></i></div>
+        <h3>Response Time</h3>
+        <p>I aim to reply within 24 hours on weekdays.</p>
+        <div class="chandle">Within 24 hrs</div>
+      </div>
+      <div class="gc cta-card ru" style="--d:.2s">
+        <div class="cta-row"><span class="sdot"></span>Open for commissions</div>
+        <h3>Ready to work<br/>together?</h3>
+        <p>From 3,000 R$ to 4,000 R$ — premium GFX at competitive prices.</p>
+        <button class="btn-discord" onclick="window.open('https://discord.com/users/995979707495485470','_blank')">
+          <i class="fa-brands fa-discord"></i>&nbsp; Message on Discord
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-wrap">
+      <div class="foot-logo">aws<span>killer</span>10</div>
+      <div class="hireVon">Interested in a portfolio like mine? <a href="https://vonock.com" target="_blank">HIRE VON</a></div>
+      <p>&copy; 2026 awskiller10 &middot; GFX Artist</p>
+      <a href="https://discord.com/users/995979707495485470" target="_blank" class="foot-a">
+        <i class="fa-brands fa-discord"></i> Discord
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
