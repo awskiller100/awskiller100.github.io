@@ -133,42 +133,42 @@ document.querySelectorAll('.sfill').forEach(b => bobs.observe(b));
 const projects = [ //those are the projects, you can change the images, titles, and the type, deliverables, and timeline there.
   {
     num: '01', cat: 'GFX • Branding', title: 'Neon Blade Studios',
-    img: 'images/first gfx.jpg',
+    img: 'images/firstgfx.png',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Logo, Type, Assets'},{label:'Timeline',value:'5 days'}],
     tags: ['Logo Design','Typography','Brand Guidelines','Asset Kit','Digital']
   },
   {
     num: '02', cat: 'GFX • Digital Art', title: 'Arctic Warfare Series',
-    img: 'images/second gfx.jpg',
+    img: 'images/secondgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'8 Thumbnails'},{label:'Timeline',value:'4 days'}],
     tags: ['Thumbnail Design','Roblox GFX','Cinematic','Digital Art','Series']
   },
   {
     num: '03', cat: 'GFX • UI Kit', title: 'Frost UI Framework',
-    img: 'images/third gfx.jpg',
+    img: 'images/thirdgfx.png',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'60+ Components'},{label:'Timeline',value:'7 days'}],
     tags: ['UI Design','Component Library','Glassmorphism','Roblox','HUD']
   },
   {
     num: '04', cat: 'GFX • Illustration', title: 'Phantom Protocol',
-    img: 'images/forth gfxc.jpg',
+    img: 'images/forthgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'12 Renders'},{label:'Timeline',value:'6 days'}],
     tags: ['Character Art','Renders','Promotional','Dark Theme','Roblox']
   },
   {
     num: '05', cat: 'GFX • Branding', title: 'StarForge Community',
-    img: 'images/fifth gfx.jpg',
+    img: 'images/fifthgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Banners, Icons, Badges'},{label:'Timeline',value:'3 days'}],
     tags: ['Discord Branding','Banner Design','Icons','Community','Server Art']
   },
   {
     num: '06', cat: 'GFX • Identity', title: 'CrimsonEdge Esports',
-    img: 'images/sixth gfx.jpg',
+    img: 'images/sixthgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Logo, Jersey, Kit'},{label:'Timeline',value:'5 days'}],
     tags: ['Logo Design','Esports','Team Branding','Social Kit','Roblox']
