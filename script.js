@@ -130,91 +130,137 @@ const bobs = new IntersectionObserver(entries => {
 }, {threshold:0.5});
 document.querySelectorAll('.sfill').forEach(b => bobs.observe(b));
 
-const projects = [ //those are the projects, you can change the images, titles, and the type, deliverables, and timeline there.
+const projects = [
   {
-    num: '01', cat: 'GFX • Branding', title: 'Neon Blade Studios',
+    num: '01',
+    cat: 'GFX • Branding',
+    title: 'Neon Blade Studios',
     img: 'images/firstgfx.png',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Logo, Type, Assets'},{label:'Timeline',value:'5 days'}],
     tags: ['Logo Design','Typography','Brand Guidelines','Asset Kit','Digital']
   },
   {
-    num: '02', cat: 'GFX • Digital Art', title: 'Arctic Warfare Series',
+    num: '02',
+    cat: 'GFX • Digital Art',
+    title: 'Arctic Warfare Series',
     img: 'images/secondgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'8 Thumbnails'},{label:'Timeline',value:'4 days'}],
     tags: ['Thumbnail Design','Roblox GFX','Cinematic','Digital Art','Series']
   },
   {
-    num: '03', cat: 'GFX • UI Kit', title: 'Frost UI Framework',
+    num: '03',
+    cat: 'GFX • UI Kit',
+    title: 'Frost UI Framework',
     img: 'images/thirdgfx.png',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'60+ Components'},{label:'Timeline',value:'7 days'}],
     tags: ['UI Design','Component Library','Glassmorphism','Roblox','HUD']
   },
   {
-    num: '04', cat: 'GFX • Illustration', title: 'Phantom Protocol',
+    num: '04',
+    cat: 'GFX • Illustration',
+    title: 'Phantom Protocol',
     img: 'images/forthgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'12 Renders'},{label:'Timeline',value:'6 days'}],
     tags: ['Character Art','Renders','Promotional','Dark Theme','Roblox']
   },
   {
-    num: '05', cat: 'GFX • Branding', title: 'StarForge Community',
+    num: '05',
+    cat: 'GFX • Branding',
+    title: 'StarForge Community',
     img: 'images/fifthgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Banners, Icons, Badges'},{label:'Timeline',value:'3 days'}],
     tags: ['Discord Branding','Banner Design','Icons','Community','Server Art']
   },
   {
-    num: '06', cat: 'GFX • Identity', title: 'CrimsonEdge Esports',
+    num: '06',
+    cat: 'GFX • Identity',
+    title: 'CrimsonEdge Esports',
     img: 'images/sixthgfx.jpg',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Logo, Jersey, Kit'},{label:'Timeline',value:'5 days'}],
     tags: ['Logo Design','Esports','Team Branding','Social Kit','Roblox']
   },
+
+  // FIXED MATCHES START HERE
+
   {
-    num: '07', cat: 'GFX • Digital Art', title: 'Project Seven',
-    img: 'images/seventh gfx.jpg',
+    num: '07',
+    cat: 'GFX • Digital Art',
+    title: 'Project Seven',
+    img: 'images/new7.png',
     desc: 'A nice GFX I made.',
-    details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Custom Asset'},{label:'Timeline',value:'3 days'}],
+    details: [{label:'Type',value:'GFX'}],
     tags: ['Roblox GFX','Digital Art']
   },
   {
-    num: '08', cat: 'GFX • Branding', title: 'Project Eight',
+    num: '08',
+    cat: 'GFX • Branding',
+    title: 'Project Eight',
     img: 'images/eighth gfx.jpg',
     desc: 'A nice GFX I made.',
-    details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Custom Asset'},{label:'Timeline',value:'3 days'}],
+    details: [{label:'Type',value:'GFX'}],
     tags: ['Roblox GFX','Branding']
   },
   {
-    num: '09', cat: 'GFX • Identity', title: 'Project Nine',
-    img: 'images/ninth gfx.jpg',
+    num: '09',
+    cat: 'GFX • Identity',
+    title: 'Project Nine',
+    img: 'images/new9.png',
     desc: 'A nice GFX I made.',
-    details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Custom Asset'},{label:'Timeline',value:'3 days'}],
+    details: [{label:'Type',value:'GFX'}],
     tags: ['Roblox GFX','Identity']
   },
   {
-    num: '10', cat: 'GFX • UI Kit', title: 'Project Ten',
-    img: 'images/tenth gfx.jpg',
+    num: '10',
+    cat: 'GFX • UI Kit',
+    title: 'Project Ten',
+    img: 'images/forth gfxc.jpg',
     desc: 'A nice GFX I made.',
-    details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Custom Asset'},{label:'Timeline',value:'3 days'}],
+    details: [{label:'Type',value:'GFX'}],
     tags: ['Roblox GFX','UI Design']
   },
   {
-    num: '11', cat: 'GFX • Digital Art', title: 'Project Eleven',
-    img: 'images/eleventh gfx.jpg',
+    num: '11',
+    cat: 'GFX • Digital Art',
+    title: 'Project Eleven',
+    img: 'images/new11.png',
     desc: 'A nice GFX I made.',
-    details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Custom Asset'},{label:'Timeline',value:'3 days'}],
+    details: [{label:'Type',value:'GFX'}],
     tags: ['Roblox GFX','Digital Art']
   },
   {
-    num: '12', cat: 'GFX • Branding', title: 'Project Twelve',
-    img: 'images/twelfth gfx.jpg',
+    num: '12',
+    cat: 'GFX • Branding',
+    title: 'Project Twelve',
+    img: 'images/new12.jpg',
     desc: 'A nice GFX I made.',
-    details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Custom Asset'},{label:'Timeline',value:'3 days'}],
+    details: [{label:'Type',value:'GFX'}],
     tags: ['Roblox GFX','Branding']
+  },
+  {
+    num: '13',
+    cat: 'GFX • Branding',
+    title: 'Project Thirteen',
+    img: 'images/new13.jpg',
+    desc: 'A nice GFX I made.',
+    details: [{label:'Type',value:'GFX'}],
+    tags: ['Roblox GFX','Branding']
+  },
+  {
+    num: '14',
+    cat: 'GFX • Digital Art',
+    title: 'Project Fourteen',
+    img: 'images/new14.png',
+    desc: 'A nice GFX I made.',
+    details: [{label:'Type',value:'GFX'}],
+    tags: ['Roblox GFX','Digital Art']
   }
+  
 ];
 
 function toggleMore() {
