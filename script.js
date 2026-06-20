@@ -135,7 +135,7 @@ const projects = [
     num: '01',
     cat: 'GFX • Branding',
     title: 'Neon Blade Studios',
-    img: 'images/firstgfx.png',
+    img: 'images/firstsecond.png',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'Logo, Type, Assets'},{label:'Timeline',value:'5 days'}],
     tags: ['Logo Design','Typography','Brand Guidelines','Asset Kit','Digital']
@@ -144,7 +144,7 @@ const projects = [
     num: '02',
     cat: 'GFX • Digital Art',
     title: 'Arctic Warfare Series',
-    img: 'images/secondgfx.jpg',
+    img: 'images/newfirst.png',
     desc: 'A nice GFX I made.',
     details: [{label:'Type',value:'GFX'},{label:'Deliverables',value:'8 Thumbnails'},{label:'Timeline',value:'4 days'}],
     tags: ['Thumbnail Design','Roblox GFX','Cinematic','Digital Art','Series']
